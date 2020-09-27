@@ -11,6 +11,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/jquery-bgswitcher-master/jquery-bgswitcher-master/jquery.bgswitcher.js"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        $(function() {
+
+            ScrollReveal().reveal('.box', {
+
+                distance: '10px',
+                origin: 'top',
+                duration: 1000
+            });
+
+        });
+
+    </script>
+
     <link rel="shortcut icon" href="./images/favicon.ico">
 
 
@@ -24,7 +39,7 @@
 
 <body>
     <div class="main-visual">
-        <div id="header" class="box">
+        <div id="header">
             <nav>
                 <ul>
                     <li><a href="content1">Introduction</a></li>
@@ -35,7 +50,7 @@
             </nav>
         </div>
 
-        <div class="main-title box">
+        <div class="main-title ">
             <img src="images/logo.png" alt="" width="900px">
             <p>We are Web Designers.</p>
         </div>

@@ -5,17 +5,21 @@
 
 @font-face {
     font-family: 'Futura';
-    src: url(../fonts/Futura-BooObl.ttf) format("opentype")
+    src: url(../fonts/Futura-Med.ttf) format("opentype")
 }
 
-.button {
+#main button {
     width: 170px;
     height: 40px;
     border-radius: 12px;
     border: none;
+}
 
-
-
+.course button {
+    width: 170px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
 }
 
 
@@ -51,6 +55,7 @@ a {
     font-weight: 300;
     font-size: 27px;
     display: inline-block;
+    font-family: Futura;
 
 }
 
@@ -71,6 +76,7 @@ h1 {
     text-align: center;
     font-size: 53px;
     font-weight: 300;
+    font-family: Futura;
 }
 
 .main-visual {
@@ -104,7 +110,7 @@ h1 {
 
     font-size: 45px;
     text-align: center;
-    font-family: auto, sans-serif;
+    font-family: Futura, sans-serif;
     font-style: italic;
     font-weight: 100;
     padding-top: 50px;
@@ -151,6 +157,7 @@ h1 {
     margin: 0 auto;
     background-color: #3D5CDB;
     margin-bottom: 10px;
+
 }
 
 #content1 button a {
@@ -158,6 +165,7 @@ h1 {
     font-weight: 700;
     line-height: 40px;
     color: #fff;
+
 }
 
 .co1-btn {
@@ -209,12 +217,13 @@ h1 {
 #content3 {
     background-color: #D6E6F9;
     width: 100vw;
-    height: 1000px;
+
     overflow: hidden;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
     display: block;
+    background-position: 50% 50%;
 }
 
 canvas {
@@ -226,13 +235,12 @@ canvas {
 }
 
 .course-all {
-    padding: 10px 240px;
-    position: relative;
+
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 
 
 }
@@ -240,15 +248,23 @@ canvas {
 .course {
     width: 240px;
     height: 340px;
-    height: 340px;
-    width: 240px;
     background-color: #fff;
     margin-right: 20px;
     margin-bottom: 30px;
     border-radius: 12px;
-    justify-content: center;
     text-align: center;
 
+
+}
+
+.top-course {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-course {
+    display: flex;
+    justify-content: center;
 }
 
 .course p {
@@ -258,6 +274,13 @@ canvas {
     color: #183c61;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.course botton {
+    display: block;
+    margin: auto;
 }
 
 .course button a {
@@ -266,6 +289,12 @@ canvas {
     line-height: 40px;
     color: #fff;
 
+}
+
+.course img {
+    display: block;
+    margin: auto;
+    width: 100px;
 }
 
 #htmlcourse img {
@@ -346,5 +375,197 @@ footer {
     color: #3E5DDB;
     margin-top: 70px;
     margin-bottom: 15px;
+
+}
+
+@media screen and (max-width:479px) {
+
+    #main {
+        width: 100vw;
+    }
+
+    .wrapper {
+        width: 100vw;
+    }
+
+
+    body {
+        100vw;
+    }
+
+    .main-title img {
+        width: 315px;
+
+    }
+
+    .main-title p {
+        font-size: 16px;
+        width: auto
+    }
+
+    #content1 {
+        flex-direction: column;
+        margin-bottom: 70px;
+        display: flex;
+        width: 100vw;
+    }
+
+    #content1 h1 {
+        width: 100vw;
+    }
+
+    .content p {
+        font-size: 13px;
+        line-height: 26px;
+        width: 90%;
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+
+    #content1 img {
+        display: block;
+        margin: auto;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 100vw;
+    }
+
+    .box-1 {
+        order: 1;
+        width: 100vw;
+    }
+
+
+    .right-box {
+
+        padding: 15px 0px;
+        width: 100vw;
+
+    }
+
+    .co1-btn {
+        margin-top: 30px;
+        width: 100vw;
+    }
+
+    #content2 {
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 100vw;
+        display: flex;
+    }
+
+    #content2 img {
+        float: clear;
+    }
+
+    .box-2 {
+
+        width: 100vw;
+        order: 1;
+    }
+
+    .left-box {
+
+        padding: 15px 0px;
+        width: 100vw;
+        order: 2;
+
+    }
+
+    .co2-btn {
+
+        width: 100vw;
+        margin-top: 30px;
+    }
+
+    #contetn3 {
+        width: 100vw;
+    }
+
+    .map {
+        position: relative;
+        width: 100vw;
+        height: 30vw;
+        padding-top: 56.25%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+    }
+
+    #header nav ul li a {
+        display: none;
+    }
+
+    .course {
+        width: 160px;
+        height: 240px;
+        margin: 10px;
+    }
+
+    .course img {
+        width: 50px;
+    }
+
+    .top-course {
+        flex-wrap: wrap;
+    }
+
+    .bottom-course {
+        flex-wrap: wrap;
+    }
+
+    .course button {
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+
+    }
+
+    .course button a {
+        font-size: 10px;
+    }
+
+    #htmlcourse img {
+        margin-bottom: 30px;
+
+    }
+
+    #csscourse img {
+        margin-bottom: 30px;
+    }
+
+
+    #jscourse img {
+        margin-bottom: 30px;
+    }
+
+    .slider {
+        margin: 0 auto;
+    }
+
+    .slider img {
+        margin: 0 auto;
+    }
+
+    #content4 {
+
+        text-align: center;
+        margin: 35px;
+    }
+
+
+
 
 }

@@ -428,12 +428,15 @@ footer {
         margin: auto;
         flex-direction: column;
         margin-bottom: 15px;
-        width: 100vw;
+        margin-left: 25px;
+        width: 90vw;
+
     }
 
     .box-1 {
         order: 1;
         width: 100vw;
+        text-align: center;
     }
 
 
@@ -452,8 +455,9 @@ footer {
     #content2 {
         flex-direction: column;
         margin-bottom: 15px;
-        width: 100vw;
+        width: 90vw;
         display: flex;
+        margin-left: 25px;
     }
 
     #content2 img {
@@ -487,7 +491,7 @@ footer {
     .map {
         position: relative;
         width: 100vw;
-        height: 30vw;
+        height: 20vw;
         padding-top: 56.25%;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
@@ -543,6 +547,10 @@ footer {
     }
 
     #csscourse img {
+        margin-bottom: 30px;
+    }
+
+    #gocourse {
         margin-bottom: 30px;
     }
 

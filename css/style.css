@@ -212,6 +212,7 @@ h1 {
 
 .co2-btn {
     text-align: center;
+    margin: clear;
 }
 
 #content3 {
@@ -455,13 +456,18 @@ footer {
     #content2 {
         flex-direction: column;
         margin-bottom: 15px;
-        width: 90vw;
+        width: 100vw;
         display: flex;
-        margin-left: 25px;
+
     }
 
     #content2 img {
-        float: clear;
+        display: block;
+        margin: auto;
+        flex-direction: column;
+        margin-bottom: 15px;
+        margin-right: 25px;
+        width: 90vw;
     }
 
     .box-2 {
